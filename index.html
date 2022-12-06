@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forest-Najpiękniejszy park w twojej okolicy!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="dist/css/main.min.css">
     <script src="https://kit.fontawesome.com/53dc7df5e2.js" crossorigin="anonymous"></script>
     <script src="dist/js/script.min.js" defer></script>
+    <script src="dist/js/scrollspy.min.js" defer></script>
 </head>
 
-<body>
+<body class="main-page">
     <nav class="nav">
     <div class="wrapper">
         <div class="nav__logo">
@@ -24,16 +25,16 @@
             <p class="nav__logo-text">Forest</p>
         </div>
         <i class="fa-solid fa-bars"></i>
-        <ul class="nav__box">
+        <div class="nav__box">
             <i class="fa-solid fa-x"></i>
-            <li class="nav__box-item"><a href="#">Home</a></li>
-            <li class="nav__box-item"><a href="#aboutus">O nas</a></li>
-            <li class="nav__box-item"><a href="#offer">Oferta</a></li>
-            <li class="nav__box-item"><a href="#">Kontakt</a></li>
-        </ul>
+            <a class="nav__box-item active1" href="#home">Home</a>
+            <a class="nav__box-item" href="#aboutus">O nas</a>
+            <a class="nav__box-item" href="#offer">Oferta</a>
+            <a class="nav__box-item" href="#">Kontakt</a>
+        </div>
     </div>
 </nav>
-    <header class="header">
+    <header class="header section" id="home">
         <div class="header__shadow">
             <div class="wrapper">
                 <div class="header__text">
@@ -44,7 +45,7 @@
         </div>
     </header>
     <main>
-        <section class="aboutus" id="aboutus">
+        <section class="aboutus section" id="aboutus">
             <div class="wrapper">
                 <h2 class="second-header">o nas</h2>
                 <div class="aboutus-box">
@@ -62,12 +63,12 @@
                     </div>
                 </div>
             </div>
+            <section class="adventure">
+                <p class="adventure__text">Przygoda dla całej rodziny</p>
+                <div class="adventure__shadow"></div>
+            </section>
         </section>
-        <section class="adventure">
-            <p class="adventure__text">Przygoda dla całej rodziny</p>
-            <div class="adventure__shadow"></div>
-        </section>
-        <section class="offer" id="offer">
+        <section class="offer section" id="offer">
             <div class="wrapper">
                 <h2 class="second-header">oferta</h2>
                 <p class="offer__text">Wybierz jedną z naszych wspaniałych ofert!</p>
@@ -119,7 +120,8 @@
                         <button class="offers__box-btn">Wybierz</button>
                     </div>
                 </div>
-                <button class="offer__btn offers__box-btn"><a href="#">dowiedz się więcej <i class="fa-solid fa-arrow-right"></i></a></button>
+                <button class="offer__btn offers__box-btn"><a href="./offer.html">dowiedz się więcej <i
+                            class="fa-solid fa-arrow-right"></i></a></button>
             </div>
         </section>
     </main>
