@@ -10,12 +10,79 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/main.min.css">
+    <link rel="stylesheet" href="dist/css/contact.min.css">
     <script src="https://kit.fontawesome.com/53dc7df5e2.js" crossorigin="anonymous"></script>
+    <script src="dist/js/contact.min.js" defer></script>
     <script src="dist/js/script.min.js" defer></script>
     <script src="dist/js/scrollspy.min.js" defer></script>
 </head>
 <body>
-    
+    <nav class="nav">
+    <div class="wrapper">
+        <div class="nav__logo">
+            <i class="fas fa-tree"></i>
+            <p class="nav__logo-text">Forest</p>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+        <div class="nav__box">
+            <i class="fa-solid fa-x"></i>
+            <a class="nav__box-item active1" href="#home">Home</a>
+            <a class="nav__box-item" href="#aboutus">O nas</a>
+            <a class="nav__box-item" href="#offer">Oferta</a>
+            <a class="nav__box-item" href="./contact.html">Kontakt</a>
+        </div>
+    </div>
+</nav>
+    <main>
+        <section class="map-contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8464210075945!2d19.89010766986877!3d50.0891622134181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1670329710686!5m2!1spl!2spl" width="320" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="comunication">
+            <div class="wrapper">
+                <form class="contact">
+                    <label for="email" class="contact__label">Podaj adres e-mail:</label>
+                    <input class="contact__input" type="text" id="email"  placeholder="Wpisz prawidłowy adres email">
+                    <label for="name" class="contact__label">Podaj imię i nazwisko:</label>
+                    <input class="contact__input" type="text" id="name"  placeholder="Imię i Nazwisko">
+                    <label for="msg" class="contact__label">Wpisz treść wiadomości:</label>
+                    <textarea class="contact__textarea" id="msg"></textarea>
+                    <button class="contact__btn">Wyślij <i class="fa-regular fa-envelope"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="wrapper">
+        <div class="map">
+            <div class="map__logo">
+                <i class="fas fa-tree"></i>
+                <p class="map__logo-text">Forest</p>
+            </div>
+            <div class="map__container">
+                <div class="map__box">
+                    <h3 class="map__box-header">O nas</h3>
+                    <a href="#">Historia</a>
+                    <a href="#">Parki</a>
+                    <a href="#">Opinie</a>
+                </div>
+                <div class="map__box">
+                    <h3 class="map__box-header">Nasza firma</h3>
+                    <a href="#">Praca</a>
+                    <a href="#">Kadry</a>
+                    <a href="#">Zarząd</a>
+                </div>
+                <div class="map__box">
+                    <h3 class="map__box-header">Dokumenty</h3>
+                    <a href="#">Wnioski</a>
+                    <a href="#">Rezerwacie</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <p class="footer__text">&copy;<span class="footer__year">2021</span> Forest Group Comapny Ltd.</p>
+    </div>
+</footer>
 </body>
 </html>
